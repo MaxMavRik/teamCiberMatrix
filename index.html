@@ -4,9 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
     
 </head>
 <body>
     
+    <header class="header">
+        <h2 class="header-logo">CiberMatrix Quest</h2>
+        <div class="header-navigation">
+             <a href="#">Home</a>
+             <a href="viktoruna/viktoruna.html">Quest<a>
+             <a href="#">Services</a>
+             <a href="#">Contact</a>
+             <button class="btnLogin-popup">Login</button>
+             </div>
+    </header>
+
+    <section class="team">
+        <div class="team-wrap">
+            <img src="https://media.istockphoto.com/id/1204809115/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D1%80%D1%83%D0%BF%D0%B0-%D0%BF%D1%80%D0%B0%D1%86%D1%96%D0%B2%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D0%B1%D1%96%D0%B7%D0%BD%D0%B5%D1%81%D1%83-%D1%89%D0%BE-%D1%81%D1%82%D0%BE%D1%8F%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BE%D0%BC-%D0%B7-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%B2-%D0%BE%D1%84%D1%96%D1%81%D1%96.jpg?s=2048x2048&w=is&k=20&c=D_rtpyq8WjT7TRHaB5qj76qSMd3kly8pyb6NMIQ6Kik=" alt="" class="team-photo">
+            <p class="team-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aliquid. Mollitia repellendus officiis sit eius illum nostrum, magni explicabo dolorum similique praesentium vero totam repellat tempore! Accusamus error laudantium sed!</p>
+        </div>
+       
+    </section>
+
+
+    <section>
+        <ul class="list-card">
+            <li class="cards-item">
+                <img class="card-photo" src="" alt="">
+                <h3 class="card-title">zagolovok</h3>
+                <p class="card-info">Info</p>
+                <button class="open-card-btn" type="button">close</button>
+                <button  class="go-card-btn" type="button">go</button>
+            </li>
+            <li class="cards-item">
+                <img class="card-photo" src="" alt="">
+                <h3 class="card-title">zagolovok</h3>
+                <p class="card-info">Info</p>
+                <button class="open-card-btn" type="button">close</button>
+                <button  class="go-card-btn" type="button">go</button>
+            </li>
+            <li class="cards-item">
+                <img class="card-photo" src="" alt="">
+                <h3 class="card-title">zagolovok</h3>
+                <p class="card-info">Info</p>
+                <button class="open-card-btn" type="button">close</button>
+                <button  class="go-card-btn" type="button">go</button>
+            </li>
+            <li class="cards-item">
+                <img class="card-photo" src="" alt="">
+                <h3 class="card-title">zagolovok</h3>
+                <p class="card-info">Info</p>
+                <button class="open-card-btn" type="button">close</button>
+                <button  class="go-card-btn" type="button">go</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- <section class="quest">
+        <div class="quests-container">
+            <div class="quest-card">
+                <img src="quest1.jpg" alt="Квест 1">
+                <h3>Таємниці старого міста</h3>
+                <p>Досліджуй старовинні вулички та знайди скарби.</p>
+                <div class="buttons">
+                    <button class="button" onclick="startQuest(1)">Почати</button>
+                    <button class="button info" onclick="showInfo(1)">Детальніше</button>
+                </div>
+            </div>
+            <div class="quest-card">
+                <img src="quest2.jpg" alt="Квест 2">
+                <h3>Загублений храм</h3>
+                <p>Розкрий секрети древнього храму та уникай пасток.</p>
+                <div class="buttons">
+                    <button class="button" onclick="startQuest(2)">Почати</button>
+                    <button class="button info" onclick="showInfo(2)">Детальніше</button>
+                </div>
+            </div>
+            <div class="quest-card">
+                <img src="quest3.jpg" alt="Квест 3">
+                <h3>Містична лабораторія</h3>
+                <p>Знайди вихід із загадкової лабораторії.</p>
+                <div class="buttons">
+                    <button class="button" onclick="startQuest(3)">Почати</button>
+                    <button class="button info" onclick="showInfo(3)">Детальніше</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+<!-- це те що нас зустрічає на головній сторінці -->
+
+    <!-- <section class="cvest">
+        <h2 class="cveest-title">Вітаємо на створенні квестів</h2>
+        <div class="creat-box">
+            <p class="creat-text">Cтворіть назву квесту</p>
+            <input type="text" class="creat-input-name">
+            <p class="creat-text">Опис до завдань квесту</p>
+            <input type="text" class="creat-input-text">
+            <p class="creat-text">Кількість завдань</p>
+            <input type="number" class="creat-input-count">
+            <p class="creat-text">Додайте картинку</p>
+            <input type="text" class="creat-input-img">
+
+            <p class="creat-type-text">Виберіть тип запитань</p>
+
+            <input type="checkbox" class="creat-input-type">
+            <label for="">Відкрита відповідь</label>
+            <input type="checkbox" class="creat-input-type">
+            <label for="">Вибір з варіантів</label>
+            <button type="button" class="cvest-creat-btn">Створити новий квест</button>
+        </div> -->
+
+<!-- це нас перекидає на саме створення квесту його потрібно буде записувати в масив обєктів одна сторіка це обєкт з якого я потім буду все підставляти  -->
+
+        <!-- <div class="choose">
+            <p class="choose-title">Придумайте запитання</p>
+            <input type="text" class="choose-title-input">
+
+
+
+        </div> -->
+
+    <input type="text" id="questionText" placeholder="Введіть питання">
+    <div id="answerOptions">
+        <input type="text" class="answer" placeholder="Варіант 1">
+        <input type="text" class="answer" placeholder="Варіант 2">
+        <input type="text" class="answer" placeholder="Варіант 3">
+        <input type="text" class="answer" placeholder="Варіант 4">
+    </div>
+    <label for="correctAnswer">Оберіть правильну відповідь:</label>
+    <select id="correctAnswer">
+        <option value="0">Варіант 1</option>
+        <option value="1">Варіант 2</option>
+        <option value="2">Варіант 3</option>
+        <option value="3">Варіант 4</option>
+    </select>
+    <button id="saveQuestionBtn">Зберегти питання</button>
+
+    <!-- Контейнер для відображення питань -->
+    <div id="questionsContainer"></div>
+
+
+        <!-- потім в мене буде ще один дів ось ця загальна картка в якій буде написано про кожен елемент і можливо нумерація  -->
+
+
+    </section>
+
+
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
+
+
+<!-- мені нада прописати що при виборі певного типу квеста відкривається певний тип модалки
+ далі в цій модалці буде відповідні умови якщо одна правильна відповідь то потрібно записати 
+ питання та 4 варіанти відповіді з яких одна відповідь правильно далі воно зберігається і переходить до 
+ наступного питання і воно повторюється беручи попередньо дані з інпута в якому вказано скільки таких питань  -->
+
+
+ 

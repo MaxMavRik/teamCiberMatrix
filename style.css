@@ -1,0 +1,213 @@
+.header {
+    background-color: aquamarine;
+    display: flex;
+    height: 100px;
+    gap: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+/*body {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/img/Background\ image.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+   
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 3;
+}
+
+.header-logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.header-navigation {
+    background: transparent;
+}
+
+.header-navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.header-navigation a::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -6px;
+width: 100%;
+height: 3px;
+background: #fff;
+border-radius: 5px;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .5s;
+}
+
+.header-navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header-navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.header-navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162939;
+} 
+
+
+
+.team-photo {
+    width: 500px;
+    height: 400px;
+    background-color: #162939;
+    margin-left: 250px;
+    
+}
+
+.team-text {
+    width: 400px;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 400px;
+}
+
+.team-wrap {
+    background-color: red;
+    display: flex;
+    margin-top: 140px;
+}
+
+.list-card {
+    display: flex;
+    gap: 60px;
+}
+
+.cards-item {
+    list-style: none;
+    background-color: antiquewhite;
+    width: 300px;
+    height: 400px;
+    border: solid red 1px;
+}
+
+
+
+
+
+
+
+
+.creat-box {
+    background-color: aquamarine;
+    height: 500px;
+    width: 300px;
+}
+
+.cvest-creat-btn {
+    border: none;
+    background-color: chartreuse;
+    padding: 8px;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quest-box {
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.quest-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.start-quest-btn {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    background: lightblue;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    margin: 15% auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
