@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 .header {
     background: #020439;
     display: flex;
@@ -6,30 +8,12 @@
 
 }
 
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 } 
-
-/*body {
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    min-height: 100vh;
-    background: url('/img/Background\ image.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
 
 header {
     position: fixed;
@@ -134,34 +118,54 @@ transition: transform .5s;
     margin-top: 40px;
     margin: 40px;
     justify-content: center;
-
-
-
 }
 
+.quests-container{
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    margin: 40px;
+    justify-content: center;
+}
 .cards-item {
     list-style: none;
     background-color: antiquewhite;
-    width: 200px;
-    height: 400px;
-    border: solid #162939 1px;
-
     overflow: hidden;
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 90%;
     max-width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 }
+
+.quest-card{
+    list-style: none;
+    background-color: antiquewhite;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
 
 .open-card-btn {
     margin-top: 20px;
     background: #ff9800;
     color: white;
     border: 1;
-    padding: 10px 40px;
+    padding: 10px 25px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
@@ -173,27 +177,14 @@ transition: transform .5s;
     background: #ff9800;
     color: white;
     border: 1;
-    padding: 10px 50px;
+    padding: 10px 35px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-.cards-item {
-    position: relative;
-    width: 400px;
-    height: 450px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
+
 
 
 .card-title {
@@ -243,7 +234,7 @@ transition: transform .5s;
 .creat-input-name{
     width: 100%;
     height: 100%;
-    
+
     border: none;
     outline: none;
     font-size: 1em;
@@ -251,6 +242,26 @@ transition: transform .5s;
     font-weight: 600;
     padding: 0 55px 0 40px;
 }
-/*.quest {
-    background: #fff;
-}*/
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#quest-preview {
+    margin-top: 20px;
+    display: none;
+}
+
+#rating-section {
+    margin-top: 40px;}
