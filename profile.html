@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особистий кабінет</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .profile-container { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        .profile-img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; }
+        .history { text-align: left; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2 class="header-logo">CiberMatrix Quest</h2>
+        <div class="header-navigation">
+             <!-- <a href="#cvest" class="link-cvest-to">Конструктор квестів</a> -->
+             <a href="./index.html">Головна</a>
+             <!-- <button class="btnLogin-popup">Login</button> -->
+             <a href="./login.html">Login</a>
+             </div>
+    </header>
+
+    <div class="profile-container">
+        <h2>Особистий кабінет</h2>
+        <img id="profile-img" class="profile-img" src="default-avatar.png" alt="Аватар">
+        <input type="file" id="image-upload">
+        
+        <input type="text" id="username" placeholder="Введіть ім'я">
+        <p>Рейтинг: <span id="rating">0</span></p>
+        
+        <h3>Історія квестів</h3>
+        <ul id="history-list" class="history"></ul>
+        
+        <button onclick="saveProfile()">Зберегти зміни</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", loadProfile);
+
+        function loadProfile() {
+            let username = localStorage.getItem("username") || "Гравець";
+            let rating = localStorage.getItem("rating") || 0;
+            let history = JSON.parse(localStorage.getItem("history")) || [];
+            let profileImg = localStorage.getItem("profileImg") || "default-avatar.png";
+
+            document.getElementById("username").value = username;
+            document.getElementById("rating").textContent = rating;
+            document.getElementById("profile-img").src = profileImg;
+            let historyList = document.getElementById("history-list");
+            historyList.innerHTML = history.map(q => <li>${q}</li>).join("");
+        }
+
+        function saveProfile() {
+            let username = document.getElementById("username").value;
+            localStorage.setItem("username", username);
+            alert("Профіль збережено!");
+        }
+
+        document.getElementById("image-upload").addEventListener("change", function(event) {
+            let reader = new FileReader();
+            reader.onload = function() {
+                let imgData = reader.result;
+                document.getElementById("profile-img").src = imgData;
+                localStorage.setItem("profileImg", imgData);
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        });
+    </script>
+</body>
+</html>
