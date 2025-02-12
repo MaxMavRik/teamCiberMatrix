@@ -19,17 +19,24 @@
     </header>
 
     <section class="team">
-        <div class="team-wrap">
-            <img src="https://media.istockphoto.com/id/1204809115/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D1%80%D1%83%D0%BF%D0%B0-%D0%BF%D1%80%D0%B0%D1%86%D1%96%D0%B2%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D0%B1%D1%96%D0%B7%D0%BD%D0%B5%D1%81%D1%83-%D1%89%D0%BE-%D1%81%D1%82%D0%BE%D1%8F%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BE%D0%BC-%D0%B7-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%B2-%D0%BE%D1%84%D1%96%D1%81%D1%96.jpg?s=2048x2048&w=is&k=20&c=D_rtpyq8WjT7TRHaB5qj76qSMd3kly8pyb6NMIQ6Kik=" alt="" class="team-photo">
-            <p class="team-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, eligendi inventore id distinctio odit fugiat illum deserunt fugit quidem perferendis maxime placeat autem ut, rem culpa perspiciatis et nesciunt quasi!</p>
-            </p>
+        <div class="container">
+
+       
+            <div class="team-wrap">
+                <img src="https://media.istockphoto.com/id/1204809115/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D1%80%D1%83%D0%BF%D0%B0-%D0%BF%D1%80%D0%B0%D1%86%D1%96%D0%B2%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D0%B1%D1%96%D0%B7%D0%BD%D0%B5%D1%81%D1%83-%D1%89%D0%BE-%D1%81%D1%82%D0%BE%D1%8F%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BE%D0%BC-%D0%B7-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%B2-%D0%BE%D1%84%D1%96%D1%81%D1%96.jpg?s=2048x2048&w=is&k=20&c=D_rtpyq8WjT7TRHaB5qj76qSMd3kly8pyb6NMIQ6Kik=" alt="" class="team-photo">
+                <p class="team-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, eligendi inventore id distinctio odit fugiat illum deserunt fugit quidem perferendis maxime placeat autem ut, rem culpa perspiciatis et nesciunt quasi!</p>
+                </p>
+            </div>
         </div>
        
     </section>
 
 <!--==================================================================================================================================================-->
 
-    <section class="quest-for-everyone">
+    <section class="quest-for-everyone ">
+        <div class="container">
+
+       
         <ul class="list-card">
 
             <li class="cards-item">
@@ -61,12 +68,13 @@
                 <button  class="go-card-btn" type="button">Почати</button>
             </li>
         </ul>
+    </div>
     </section>
 
 
 <!--==================================================================================================================================================-->
 
-     <section class="quest-for-enthusiast">
+     <section class="quest-for-enthusiast  container">
         <ul class="list-card">
             <h2 class="cveest-title">Квести для всіх !!! </h2>
 
@@ -103,39 +111,9 @@
 
 <!--==================================================================================================================================================-->
 
-<h1>Конструктор Квесту</h1>
 
-    <form id="quest-form">
-        <label for="quest-name">Назва квесту:</label>
-        <input type="text" id="quest-name" required><br><br>
 
-        <label for="quest-description">Опис:</label>
-        <textarea id="quest-description" required></textarea><br><br>
-
-        <label for="num-questions">Кількість завдань:</label>
-        <input type="number" id="num-questions" min="1" required><br><br>
-
-        <label for="quest-image">Завантажити картинку:</label>
-        <input type="file" id="quest-image" accept="image/*"><br><br>
-
-        <label for="time-limit">Час на проходження (в секундах):</label>
-        <input type="number" id="time-limit" min="1" required><br><br>
-
-        <label for="task-type">Тип завдань:</label>
-        <select id="task-type">
-            <option value="open">Відкрита відповідь</option>
-            <option value="multiple-choice">Вибір з варіантів</option>
-        </select><br><br>
-
-        <button type="submit">Створити квест</button>
-    </form>
-
-    <div id="quest-preview">
-        <h2>Попередній перегляд</h2>
-        <div id="quest-preview-content"></div>
-    </div>
-
-    <div id="rating-section">
+    <!-- <div id="rating-section">
         <h2>Оцінка квесту</h2>
         <div id="rating">
             <label for="rating-value">Ваша оцінка:</label>
@@ -151,9 +129,9 @@
         <div id="average-rating">
             <p>Середній рейтинг: <span id="avg-rating">0</span></p>
         </div>
-    </div>
+    </div> -->
 
-    <script src="scripts.js"></script>
+    
 
 
 
@@ -164,8 +142,8 @@
 
 <!-- це те що нас зустрічає на головній сторінці -->
 
-     <section class="cvest">
-        <h2 class="cveest-title">Вітаємо на створенні квестів</h2>
+    
+        <!-- <h2 class="cveest-title">Вітаємо на створенні квестів</h2>
         <div class="creat-box">
             <p class="creat-text">Cтворіть назву квесту</p>
             <input type="text" class="creat-input-name">
@@ -183,7 +161,7 @@
             <input type="checkbox" class="creat-input-type">
             <label for="">Вибір з варіантів</label>
             <button type="button" class="cvest-creat-btn">Створити новий квест</button>
-        </div> 
+        </div>  -->
 
 <!-- це нас перекидає на саме створення квесту його потрібно буде записувати в масив обєктів одна сторіка це обєкт з якого я потім буду все підставляти  -->
 
@@ -194,25 +172,69 @@
 
 
         </div> -->
+    <section class="cvest  container">
+        <h1>Конструктор Квесту</h1>
+        <div class="all-wrap">
 
-    <input type="text" id="questionText" placeholder="Введіть питання">
-    <div id="answerOptions">
-        <input type="text" class="answer" placeholder="Варіант 1">
-        <input type="text" class="answer" placeholder="Варіант 2">
-        <input type="text" class="answer" placeholder="Варіант 3">
-        <input type="text" class="answer" placeholder="Варіант 4">
+        <form id="quest-form" class="cvest-form">
+            <label for="quest-name">Назва квесту:</label>
+            <input type="text" id="quest-name" required><br><br>
+
+            <label for="quest-description">Опис:</label>
+            <textarea id="quest-description" required></textarea><br><br>
+
+            <label for="num-questions">Кількість завдань:</label>
+            <input type="number" id="num-questions" min="1" required><br><br>
+
+            <label for="quest-image">Завантажити картинку:</label>
+            <input type="file" id="quest-image" accept="image/*"><br><br>
+
+            <label for="time-limit">Час на проходження (в секундах):</label>
+            <input type="number" id="time-limit" min="1" required><br><br>
+
+            <label for="task-type">Тип завдань:</label>
+            <select id="task-type">
+                <option value="open">Відкрита відповідь</option>
+                <option value="multiple-choice">Вибір з варіантів</option>
+            </select><br><br>
+
+        <button type="submit">Створити квест</button>
+    </form>
+
+    <div id="quest-preview">
+        <h2>Попередній перегляд</h2>
+        <div id="quest-preview-content"></div>
     </div>
-    <label for="correctAnswer">Оберіть правильну відповідь:</label>
-    <select id="correctAnswer">
-        <option value="0">Варіант 1</option>
-        <option value="1">Варіант 2</option>
-        <option value="2">Варіант 3</option>
-        <option value="3">Варіант 4</option>
-    </select>
-    <button id="saveQuestionBtn">Зберегти питання</button>
+
+       
+        <div class="answer-box">
+
+            <div id="answerOption" class="answer-list">
+                <input type="text" class="answer-title" id="questionText" placeholder="Введіть питання">
+                <input type="text" class="answer" placeholder="Варіант 1">
+                <input type="text" class="answer" placeholder="Варіант 2">
+                <input type="text" class="answer" placeholder="Варіант 3">
+                <input type="text" class="answer" placeholder="Варіант 4">
+
+                <label for="correctAnswer">Оберіть правильну відповідь:</label>
+            <select id="correctAnswer">
+                <option value="0">Варіант 1</option>
+                <option value="1">Варіант 2</option>
+                <option value="2">Варіант 3</option>
+                <option value="3">Варіант 4</option>
+            </select>
+            </div>
+            
+        </div>
+        <button id="saveQuestionBtn" class="answer-btn">Зберегти питання</button>
+    </div>
 
     <!-- Контейнер для відображення питань -->
-    <div id="questionsContainer"></div>
+    <div id="questionsContainer">
+        <div class="container">
+
+        </div>
+    </div>
 
 
         <!-- потім в мене буде ще один дів ось ця загальна картка в якій буде написано про кожен елемент і можливо нумерація  -->
@@ -221,6 +243,7 @@
     </section>
 
 
+    <script src="scripts.js"></script>
     <script type="module" src="./index.js"></script>
 <!-- Це ссилка на іконки  якщо вдруг знадобляться -->
     <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 

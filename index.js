@@ -48,7 +48,7 @@ function displayQuestions() {
         question.options.forEach((option, i) => {
             const answerBtn = document.createElement("button");
             answerBtn.textContent = option;
-            answerBtn.classList.add("answer-btn");
+            answerBtn.classList.add("aswer-btn-chek");
             answerBtn.onclick = () => checkAnswer(index, i);
             questionBox.appendChild(answerBtn);
         });

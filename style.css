@@ -15,10 +15,18 @@
     font-family: 'Poppins', sans-serif;
 } 
 
+.container {
+    outline: solid red 5px;
+    width: 1800px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     padding: 20px 100px;
     display: flex;
@@ -252,11 +260,11 @@ form {
     margin: 0 auto;
 }
 
-input, select, textarea {
+/* input, select, textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-}
+} */
 
 #quest-preview {
     margin-top: 20px;
@@ -264,4 +272,78 @@ input, select, textarea {
 }
 
 #rating-section {
-    margin-top: 40px;}
+    margin-top: 40px;
+}
+
+.answer {
+    background-color: brown;
+    padding: 10px;
+    border-radius: 30px;
+    width: 300px;
+}
+
+.answer-title {
+    padding: 10px;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.answer-list {
+    background-color: chartreuse;
+    width: 500px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+
+}
+
+.answer-box {
+/* background-color: deeppink; */
+
+}
+
+.answer-btn {
+    background-color: coral;
+    padding: 5px;
+    border-radius: 30px;
+    display: block;
+    width: 250px;
+    height: 60px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.cvest {
+    background-color: darkseagreen;
+}
+
+.all-wrap {
+    display: flex;
+    background-color: darkolivegreen;
+}
+
+.cvest-form {
+    background-color: dodgerblue;
+    width: 400px;
+    margin-left: 200px;
+    margin-right: 0;
+}
+
+.question-box {
+    width: 500px;
+    height: 300px;
+    background-color: fuchsia;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aswer-btn-chek {
+    width: 100px;
+    height: 50px;
+    background-color: darkcyan;
+}
