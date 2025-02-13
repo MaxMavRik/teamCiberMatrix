@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cvesr-start.css">
+</head>
+<body>
+    <body>
+        <div class="difficulty-selection">
+            <button onclick="setDifficulty('easy')">Легкий рівень</button>
+            <button onclick="setDifficulty('hard')">Складний рівень</button>
+        </div>
+    
+        <div class="quiz-container" id="quiz-container">
+            <h1 id="question">Яка столиця України?</h1>
+            <div id="options" class="options"><button class="option">Львів</button><button class="option">Київ</button><button class="option">Харків</button><button class="option">Одеса</button></div>
+            <p id="feedback" class="feedback"></p>
+            <button id="randomQuiz" onclick="loadRandomQuiz()">Рандомний квест</button>
+            <button id="next" onclick="loadQuestion()">Наступне запитання</button>
+        </div>
+    
+        <script>
+            function setDifficulty(level) {
+                localStorage.setItem("difficulty", level);
+                location.reload();
+            }
+        </script>
+        <script src="./cvesrt-start.js"></script>
+    
+    
+    </body>
+</body>
+</html>

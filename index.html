@@ -14,8 +14,9 @@
         <div class="header-navigation">
              <a href="#cvest" class="link-cvest-to">Конструктор квестів</a>
              <a href="./profile.html">Особистий кабінет</a>
-             <button class="btnLogin-popup">Login</button>
+             <!-- <button class="btnLogin-popup">Login</button> -->
              <a href="./login.html">Login</a>
+             <a href="./cvesr-start.html">cvesr</a>
              </div>
     </header>
 
@@ -178,28 +179,28 @@
         <div class="all-wrap">
 
         <form id="quest-form" class="cvest-form">
-            <label for="quest-name">Назва квесту:</label>
-            <input type="text" id="quest-name" required><br><br>
+            <label for="quest-name" class="cvest-text">Назва квесту:</label>
+            <input type="text" id="quest-name" class="cvest-input" required><br><br>
 
-            <label for="quest-description">Опис:</label>
-            <textarea id="quest-description" required></textarea><br><br>
+            <label for="quest-description" class="cvest-text">Опис:</label>
+            <textarea id="quest-description" required class="cvest-input"></textarea><br><br>
 
-            <label for="num-questions">Кількість завдань:</label>
-            <input type="number" id="num-questions" min="1" required><br><br>
+            <label for="num-questions" class="cvest-text">Кількість завдань:</label>
+            <input type="number" id="num-questions" min="1" class="cvest-input" required><br><br>
 
-            <label for="quest-image">Завантажити картинку:</label>
-            <input type="file" id="quest-image" accept="image/*"><br><br>
+            <label for="quest-image" class="cvest-text">Завантажити картинку:</label>
+            <input type="file" id="quest-image" accept="image/*" class="cvest-input"><br><br>
 
-            <label for="time-limit">Час на проходження (в секундах):</label>
-            <input type="number" id="time-limit" min="1" required><br><br>
+            <label for="time-limit" class="cvest-text">Час на проходження (в секундах):</label>
+            <input type="number" id="time-limit" min="1" class="cvest-input" required><br><br>
 
-            <label for="task-type">Тип завдань:</label>
+            <label for="task-type" class="cvest-text">Тип завдань:</label>
             <select id="task-type">
                 <option value="open">Відкрита відповідь</option>
                 <option value="multiple-choice">Вибір з варіантів</option>
             </select><br><br>
 
-        <button type="submit">Створити квест</button>
+        <button type="submit" class="cvest-btn">Створити квест</button>
     </form>
 
     <div id="quest-preview">
@@ -217,6 +218,7 @@
                 <input type="text" class="answer" placeholder="Варіант 3">
                 <input type="text" class="answer" placeholder="Варіант 4">
 
+                
                 <label for="correctAnswer">Оберіть правильну відповідь:</label>
             <select id="correctAnswer">
                 <option value="0">Варіант 1</option>
@@ -224,10 +226,13 @@
                 <option value="2">Варіант 3</option>
                 <option value="3">Варіант 4</option>
             </select>
+            <button id="saveQuestionBtn" class="answer-btn">Зберегти питання</button>
+            
             </div>
             
+            
         </div>
-        <button id="saveQuestionBtn" class="answer-btn">Зберегти питання</button>
+        
     </div>
 
     <!-- Контейнер для відображення питань -->
